@@ -1,0 +1,87 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+
+.menu {
+    .menu__btn {
+        display: none
+    }
+}
+
+
+
+
+/*медия всегда должны быть в низу */
+
+
+/*
+
+&__link {
+    color: $title;
+    font-family: $;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+    outline-color: #000000;
+    outline-offset: 5px;
+    transition: color 0.5s;
+    &:focus {
+        color: $green;
+    }
+
+    &:hover {
+        color: $ac;
+    }
+
+    &--active {
+        color: $ac;
+    }
+}
+
+*/
+
+/*.video {
+    height: 425px;
+    max-width: 1185px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.7s,
+        border 0.5s;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    &:focus {
+        outline: solid $ac;
+    }
+
+    &:hover {
+        opacity: 0.4;
+        border: 2px solid $black;
+    }
+
+    &:active {
+        color: $active;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../images/play.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100px;
+    }
+}*/
+
+@import 'media';
