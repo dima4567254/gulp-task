@@ -16,6 +16,7 @@ const browserSync = require('browser-sync').create();
 // const svgSprite = require('./index.js');
 const svgSprite = require('gulp-svg-sprite');
 
+
 // gulp-svg-sprite
 // const { src, dest, parallel } = require('gulp');
 
@@ -200,3 +201,24 @@ function gule() {
     .pipe(dest('app/images/sprite'));
 }
 // ----------------------------------------------------
+
+const fonter = require('gulp-fonter');
+
+
+task(fonts);
+
+function fonts() {
+    // return gulp
+    // .src('app/fonts/*')
+    return src('app/fonts/*')
+    .pipe(fonter({
+        subset: [66,67,68, 69, 70, 71],
+        formats: ['woff', 'ttf']
+      }))
+    // .pipe(gulp.dest('app/fonts'));
+    .pipe(dest('app/fonts'));
+}
+ 
+// gulp.task('fonts', () => {
+  
+// });
